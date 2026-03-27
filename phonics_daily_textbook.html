@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>自然拼读每日课本（6周）</title>
+  <style>
+    :root {
+      --bg: #fffaf2;
+      --ink: #2c3540;
+      --paper: #ffffff;
+      --line: #e3d7c7;
+      --brand: #d26a2e;
+      --brand-soft: #fff1e7;
+      --mint: #e7f5ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 10%, #fff7df 0%, rgba(255,247,223,0) 40%),
+        radial-gradient(circle at 80% 20%, #e7f3ff 0%, rgba(231,243,255,0) 38%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: 20px auto;
+      padding: 0 14px 24px;
+    }
+    .hero {
+      background: linear-gradient(120deg, #d26a2e, #ea8a40);
+      color: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 22px rgba(210, 106, 46, 0.22);
+      margin-bottom: 14px;
+    }
+    .hero h1 { margin: 0 0 6px; font-size: 30px; }
+    .hero p { margin: 0; opacity: 0.95; }
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.45);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .week-head {
+      padding: 12px 16px;
+      background: var(--brand-soft);
+      border-bottom: 1px solid var(--line);
+    }
+    .week-head h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #9b4e1f;
+    }
+    .week-head p {
+      margin: 4px 0 0;
+      font-size: 14px;
+    }
+    .lesson {
+      border-top: 1px dashed var(--line);
+      padding: 12px 16px;
+    }
+    .lesson:first-of-type { border-top: none; }
+    .title-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .title-row h3 {
+      margin: 0;
+      font-size: 17px;
+      color: #7f3f1a;
+    }
+    .chip {
+      font-size: 12px;
+      border-radius: 999px;
+      padding: 2px 8px;
+      background: var(--mint);
+      border: 1px solid #cde7db;
+      color: #1f6a4f;
+    }
+    .cols {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 10px;
+    }
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 10px;
+      background: #fff;
+    }
+    .box h4 {
+      margin: 0 0 6px;
+      font-size: 14px;
+      color: #5f3d2a;
+    }
+    .words {
+      margin: 0;
+      font-size: 14px;
+    }
+    .quiz ol {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 14px;
+    }
+    .quiz li { margin-bottom: 5px; }
+    .flow {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 10px;
+      color: #9b4e1f;
+      font-size: 13px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 16px;
+    }
+    @media (max-width: 860px) {
+      .cols { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>自然拼读每日课本（6周）</h1>
+      <p>面向 7 岁孩子：每次一小步，每天都能学会一点点。</p>
+      <div class="nav">
+        <a href="#week1">第1周</a>
+        <a href="#week2">第2周</a>
+        <a href="#week3">第3周</a>
+        <a href="#week4">第4周</a>
+        <a href="#week5">第5周</a>
+        <a href="#week6">第6周</a>
+      </div>
+      <a class="back" href="index.html">返回发音总表</a>
+    </section>
+
+    <section class="card" id="week1">
+      <div class="week-head">
+        <h2>第1周：短元音和 CVC</h2>
+        <p>目标：看到短元音就能读出来，能读 cat/bed/pig 这类词。</p>
+      </div>
+      <div class="lesson">
+        <div class="title-row"><h3>Day 1</h3><span class="chip">a /ae/</span></div>
+        <div class="cols">
+          <div class="box"><h4>今天学什么</h4><p class="words">例词：cat, cap, bat, map, bag, sad<br>句子：A cat has a cap.</p><ol class="flow"><li>大声读 2 轮。</li><li>慢拼一次：c-a-t。</li><li>找出含 a 的词。</li></ol></div>
+          <div class="box quiz"><h4>小测验</h4><ol><li>圈出发 /ae/ 的词：cat / sit / bus</li><li>补全：c _ t</li><li>听写：map, bag</li></ol></div>
+        </div>
+      </div>
+      <div class="lesson"><div class="title-row"><h3>Day 2</h3><span class="chip">e /e/</span></div><div class="cols"><div class="box"><h4>今天学什么</h4><p class="words">例词：bed, pen, red, net, pet, leg<br>句子：The pen is red.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>选出 e 音：bed / pig / hot</li><li>补全：p _ n</li><li>听写：red, net</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 3</h3><span class="chip">i /i/</span></div><div class="cols"><div class="box"><h4>今天学什么</h4><p class="words">例词：pig, sit, big, pin, lip, fin<br>句子：A pig is big.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>选出 i 音：sun / pig / dog</li><li>补全：s _ t</li><li>听写：pig, lip</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 4</h3><span class="chip">o /o/</span></div><div class="cols"><div class="box"><h4>今天学什么</h4><p class="words">例词：hot, dog, box, pot, top, log<br>句子：The dog is hot.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>选出 o 音：box / bed / run</li><li>补全：d _ g</li><li>听写：top, log</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 5</h3><span class="chip">u /uh/</span></div><div class="cols"><div class="box"><h4>今天学什么</h4><p class="words">例词：sun, cup, bus, run, bug, mud<br>句子：The bus can run.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>选出 u 音：sun / sea / goat</li><li>补全：c _ p</li><li>听写：bus, run</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 6</h3><span class="chip">混合复习</span></div><div class="cols"><div class="box"><h4>今天学什么</h4><p class="words">复习词：cat, bed, pig, dog, sun, pen, box, bus</p></div><div class="box quiz"><h4>小测验</h4><ol><li>读词计时：8 词 1 分钟。</li><li>听音选字母：a/e/i/o/u</li><li>听写：bed, sun</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 7</h3><span class="chip">轻松巩固</span></div><div class="cols"><div class="box"><h4>今天学什么</h4><p class="words">亲子游戏：抽卡读词、拍手拼读。</p></div><div class="box quiz"><h4>小测验</h4><ol><li>孩子自选 5 词朗读。</li><li>家长口头提问 3 个拼写。</li><li>打分：稳 / 还行 / 需要复习</li></ol></div></div></div>
+    </section>
+
+    <section class="card" id="week2">
+      <div class="week-head"><h2>第2周：辅音组合</h2><p>目标：把两个字母当一个声音读。</p></div>
+      <div class="lesson"><div class="title-row"><h3>Day 1</h3><span class="chip">sh</span></div><div class="cols"><div class="box"><h4>例词和句子</h4><p class="words">ship, shop, fish, dish, shell, shut<br>句子：The fish is in a dish.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>圈出 sh：shop / chip / bus</li><li>补全：fi _ </li><li>听写：ship, dish</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 2</h3><span class="chip">ch</span></div><div class="cols"><div class="box"><h4>例词和句子</h4><p class="words">chip, chop, chat, much, lunch, rich<br>句子：I chat at lunch.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>圈出 ch：chat / ship / ring</li><li>补全：_ ip</li><li>听写：chip, lunch</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 3</h3><span class="chip">th (thin)</span></div><div class="cols"><div class="box"><h4>例词和句子</h4><p class="words">thin, bath, math, thumb, three, thank<br>句子：Three thin cats.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>读对比：thin / this</li><li>补全：_ ree</li><li>听写：thin, math</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 4</h3><span class="chip">th (this)</span></div><div class="cols"><div class="box"><h4>例词和句子</h4><p class="words">this, that, these, those, mother, brother<br>句子：This is my mother.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>选出浊音 th：this / thin</li><li>补全：_ at</li><li>听写：this, that</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 5</h3><span class="chip">ng</span></div><div class="cols"><div class="box"><h4>例词和句子</h4><p class="words">sing, song, long, ring, king, wing<br>句子：I sing a song.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ng：ring / red / toy</li><li>补全：so _ </li><li>听写：sing, long</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 6</h3><span class="chip">ck</span></div><div class="cols"><div class="box"><h4>例词和句子</h4><p class="words">duck, back, pick, sock, rock, neck<br>句子：Pick a red sock.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ck：duck / day / moon</li><li>补全：ro _ </li><li>听写：duck, rock</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 7</h3><span class="chip">周复习</span></div><div class="cols"><div class="box"><h4>复习词</h4><p class="words">ship, chip, thin, this, sing, duck</p></div><div class="box quiz"><h4>小测验</h4><ol><li>快速朗读 6 词。</li><li>听音判断是 sh/ch/th。</li><li>听写：ship, this, duck</li></ol></div></div></div>
+    </section>
+
+    <section class="card" id="week3">
+      <div class="week-head"><h2>第3周：长元音组合</h2><p>目标：看到组合就读长音，不再一个字母一个字母慢读。</p></div>
+      <div class="lesson"><div class="title-row"><h3>Day 1</h3><span class="chip">ai</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">rain, train, tail, mail, paint, snail</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ai：rain / boy / duck</li><li>补全：tr _ n</li><li>听写：rain, tail</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 2</h3><span class="chip">ay</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">day, play, stay, gray, tray, Sunday</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ay：play / rain / fish</li><li>补全：d _ </li><li>听写：day, play</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 3</h3><span class="chip">ee</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">see, tree, green, sheep, feet, sleep</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ee：tree / road / turn</li><li>补全：s _ </li><li>听写：see, tree</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 4</h3><span class="chip">ea</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">sea, tea, read, clean, speak, dream</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ea：tea / toy / sun</li><li>补全：s _ </li><li>听写：tea, read</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 5</h3><span class="chip">oa</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">boat, road, goat, coat, soap, toast</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 oa：boat / big / chip</li><li>补全：r _ d</li><li>听写：boat, road</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 6</h3><span class="chip">ow (snow)</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">snow, low, slow, grow, yellow, window</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ow：snow / house / fish</li><li>补全：sl _ </li><li>听写：snow, grow</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 7</h3><span class="chip">周复习</span></div><div class="cols"><div class="box"><h4>复习词</h4><p class="words">rain, day, tree, sea, boat, snow</p></div><div class="box quiz"><h4>小测验</h4><ol><li>1 分钟快读 6 词。</li><li>判断 ai 还是 ay。</li><li>听写：day, tree, boat</li></ol></div></div></div>
+    </section>
+
+    <section class="card" id="week4">
+      <div class="week-head"><h2>第4周：igh + r 控制元音</h2><p>目标：读准 night / car / bird / turn 这类词。</p></div>
+      <div class="lesson"><div class="title-row"><h3>Day 1</h3><span class="chip">igh</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">night, light, high, right, bright, sight</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 igh：night / snow / fish</li><li>补全：l _ t</li><li>听写：night, light</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 2</h3><span class="chip">ar</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">car, star, farm, park, hard, dark</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ar：star / bed / toy</li><li>补全：c _ </li><li>听写：car, star</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 3</h3><span class="chip">or</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">fork, corn, short, storm, horse, morning</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 or：fork / map / bus</li><li>补全：c _ n</li><li>听写：fork, corn</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 4</h3><span class="chip">er</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">her, term, person, never, winter</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 er：her / ship / rain</li><li>补全：n _ v e r</li><li>听写：her, term</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 5</h3><span class="chip">ir</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">bird, girl, shirt, third, first</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ir：bird / road / cup</li><li>补全：sh _ t</li><li>听写：bird, shirt</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 6</h3><span class="chip">ur</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">turn, hurt, nurse, purple, burger</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ur：turn / boy / cat</li><li>补全：h _ t</li><li>听写：turn, hurt</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 7</h3><span class="chip">周复习</span></div><div class="cols"><div class="box"><h4>复习词</h4><p class="words">night, star, fork, bird, turn, light</p></div><div class="box quiz"><h4>小测验</h4><ol><li>分类：igh / ar / or / er-ir-ur。</li><li>朗读句：The bird is bright at night.</li><li>听写：star, bird, turn</li></ol></div></div></div>
+    </section>
+
+    <section class="card" id="week5">
+      <div class="week-head"><h2>第5周：双元音扩展</h2><p>目标：掌握 oi/oy, ou/ow, ue/ew 的常见读法。</p></div>
+      <div class="lesson"><div class="title-row"><h3>Day 1</h3><span class="chip">oi</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">coin, join, point, soil, boil, noise</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 oi：coin / play / duck</li><li>补全：j _ n</li><li>听写：coin, join</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 2</h3><span class="chip">oy</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">boy, toy, joy, enjoy, royal</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 oy：toy / rain / map</li><li>补全：b _ </li><li>听写：boy, toy</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 3</h3><span class="chip">ou</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">house, mouse, cloud, sound, round, mouth</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ou：house / ship / green</li><li>补全：cl _ d</li><li>听写：house, cloud</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 4</h3><span class="chip">ow (cow)</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">cow, now, down, town, brown, flower</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ow：cow / snow / night</li><li>补全：d _ n</li><li>听写：cow, down</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 5</h3><span class="chip">ue</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">blue, glue, true, clue, flute, June</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ue：blue / bird / pen</li><li>补全：tr _ </li><li>听写：blue, true</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 6</h3><span class="chip">ew</span></div><div class="cols"><div class="box"><h4>例词</h4><p class="words">new, few, grew, threw, blew, stew</p></div><div class="box quiz"><h4>小测验</h4><ol><li>找 ew：new / map / fish</li><li>补全：f _ </li><li>听写：new, grew</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 7</h3><span class="chip">周复习</span></div><div class="cols"><div class="box"><h4>复习词</h4><p class="words">coin, boy, house, cow, blue, new</p></div><div class="box quiz"><h4>小测验</h4><ol><li>分类：oi/oy 与 ou/ow。</li><li>读句：The boy found a coin in the house.</li><li>听写：boy, house, blue</li></ol></div></div></div>
+    </section>
+
+    <section class="card" id="week6">
+      <div class="week-head"><h2>第6周：总复习 + 测评</h2><p>目标：把前面学过的规则真正用起来。</p></div>
+      <div class="lesson"><div class="title-row"><h3>Day 1</h3><span class="chip">短元音复习</span></div><div class="cols"><div class="box"><h4>任务</h4><p class="words">读词：cat, bed, pig, hot, sun, map, pen, dog</p></div><div class="box quiz"><h4>小测验</h4><ol><li>1 分钟读完 8 词。</li><li>听音写字母：a/e/i/o/u。</li><li>听写：cat, pen, sun</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 2</h3><span class="chip">辅音组合复习</span></div><div class="cols"><div class="box"><h4>任务</h4><p class="words">ship, chat, thin, this, sing, duck</p></div><div class="box quiz"><h4>小测验</h4><ol><li>听音判断 sh/ch/th/ng/ck。</li><li>朗读句：This duck can sing.</li><li>听写：ship, thin, duck</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 3</h3><span class="chip">长元音复习</span></div><div class="cols"><div class="box"><h4>任务</h4><p class="words">rain, day, tree, sea, boat, snow</p></div><div class="box quiz"><h4>小测验</h4><ol><li>ai 与 ay 分类。</li><li>ee 与 ea 分类。</li><li>听写：day, tree, boat</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 4</h3><span class="chip">igh + r 控制复习</span></div><div class="cols"><div class="box"><h4>任务</h4><p class="words">night, star, fork, bird, turn, light</p></div><div class="box quiz"><h4>小测验</h4><ol><li>读句：The bird is bright at night.</li><li>分类：ar/or/er-ir-ur。</li><li>听写：bird, turn</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 5</h3><span class="chip">双元音复习</span></div><div class="cols"><div class="box"><h4>任务</h4><p class="words">coin, boy, house, cow, blue, new</p></div><div class="box quiz"><h4>小测验</h4><ol><li>oi 与 oy 分类。</li><li>ou 与 ow 分类。</li><li>听写：boy, house, blue</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 6</h3><span class="chip">短文朗读</span></div><div class="cols"><div class="box"><h4>小短文</h4><p class="words">A boy has a blue toy boat.<br>He plays on a wet road after rain.<br>He sees a bird at night.</p></div><div class="box quiz"><h4>小测验</h4><ol><li>圈出 ai/oa/igh。</li><li>朗读 2 遍，第二遍更流畅。</li><li>听写：blue, rain</li></ol></div></div></div>
+      <div class="lesson"><div class="title-row"><h3>Day 7</h3><span class="chip">周测评</span></div><div class="cols"><div class="box"><h4>测评内容</h4><p class="words">读词 20 个 + 读句 5 个 + 听写 8 词</p></div><div class="box quiz"><h4>评分建议</h4><ol><li>90% 以上：进入下一阶段阅读。</li><li>70%-89%：针对薄弱点再练 2 周。</li><li>70% 以下：回到第2-3周重练。</li></ol></div></div></div>
+    </section>
+
+    <p class="footer">Family Phonics Daily Textbook · 2026</p>
+  </div>
+</body>
+</html>
